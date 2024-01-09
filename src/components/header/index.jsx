@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { useSelector, useDispatch} from "react-redux";
 import rootReducer from "../../redux/root-reducer";
-import UserActionTypes from "../../redux/action-types";
+import {loginUser, logoutUser} from "../../redux/actions"
+
 
 // Components
 import Cart from "../cart/index";
@@ -22,19 +23,13 @@ const dispatch = useDispatch()
 console.log(currentUser);
 
 const handlerLoginClick = () =>{
-  dispatch({
-     type :  UserActionTypes.LOGIN
-     
-  });
+    dispatch(loginUser({name : "Daniel Rocha" , email : "daniel@outlook.com"}));
 }
 
 
 
 const handlerLogoutClick = () =>{
-  dispatch({
-     type :  UserActionTypes.LOGOUT
-     
-  });
+  dispatch((logoutUser()));
 
 }
 
