@@ -24,7 +24,7 @@ const {products} = useSelector(rootReducer => rootReducer.cartReducer);
 const dispatch = useDispatch()
 
 const productsCount = useMemo(()=> {
-   return products.reduce((acc,curr) => acc + curr.quatity,0);
+   return products.reduce((acc,curr) => acc + curr.quantity,0);
 
 },[products]);
 

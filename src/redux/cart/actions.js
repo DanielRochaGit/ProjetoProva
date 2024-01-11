@@ -7,3 +7,28 @@ export const addProductToCart = (payload) => ({
 
 
 });
+
+export const removeProductsFromCart = (payload) => ({
+
+      type:CartActionTypes.REMOVE_PRODUCT,
+      payload
+
+
+});
+
+export const incresasProductQuant = (payload) => ({
+
+    type:CartActionTypes.INCREASE_PRODUCT_QUANT,
+    payload
+
+
+});
+
+
+export const descreaseProductQuant = (payload) => ({
+
+    type:CartActionTypes.DESCREASE_PRODUCT_QUANT,
+    payload
+
+
+});
