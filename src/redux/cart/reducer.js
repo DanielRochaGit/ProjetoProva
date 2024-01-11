@@ -5,7 +5,7 @@ import CartActionTypes from "./action-types"
 const initialState = {
 
     products : [],
-    productsTotalPrice : 0
+   
 
 }
 

@@ -9,6 +9,7 @@ import Cart from "../cart/index";
 
 // Styles
 import * as Styles from "./styles";
+import { selectProductsCount } from "../../redux/cart/cart.selector";
 
 
 
@@ -23,10 +24,14 @@ const {products} = useSelector(rootReducer => rootReducer.cartReducer);
 
 const dispatch = useDispatch()
 
-const productsCount = useMemo(()=> {
-   return products.reduce((acc,curr) => acc + curr.quantity,0);
 
-},[products]);
+
+const productsCount = useSelector(selectProductsCount);
+
+// const productsCount = useMemo(()=> {
+//    return products.reduce((acc,curr) => acc + curr.quantity,0);
+
+// },[products]);
 
 
 console.log(currentUser);

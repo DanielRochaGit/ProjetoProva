@@ -11,7 +11,7 @@ const dispatch = useDispatch();
 
   
   const handleRemoveClick = () => { 
-    dispatch(removeProductsFromCart(product.id));
+    dispatch(removeProductsFromCart(product));
 
   };
 
