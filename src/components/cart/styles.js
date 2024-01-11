@@ -19,6 +19,10 @@ export const CartContainer = styled.div`
     color: #222222;
   }
 `;
+  
+
+
+
 
 export const CartEscapeArea = styled.div`
   width: 100%;
